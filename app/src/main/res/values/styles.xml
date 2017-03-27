@@ -1,0 +1,24 @@
+<resources xmlns:android="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#ABABAB</item>
+    </style>
+
+    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AnimationFade">
+        <!-- PopupWindow 左右弹出的效果-->
+        <item name="android:windowEnterAnimation">@anim/in_left
+        </item>
+        <item name="android:windowExitAnimation">@anim/out_left
+        </item>
+
+    </style>
+
+</resources>
+
