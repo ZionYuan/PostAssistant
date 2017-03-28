@@ -30,8 +30,8 @@
             android:layout_marginRight="15dp"
             android:layout_marginTop="15dp"
             android:background="@drawable/bg_edittext"
-            android:hint="请输入账号"
-            android:inputType="textPassword"
+            android:hint="请输入手机号"
+            android:inputType="number"
             android:paddingLeft="10dip"
             android:textColorHint="#AAAAAA" />
 
@@ -81,7 +81,7 @@
             android:layout_marginTop="5dp" >
 
             <CheckBox
-                android:id="@+id/cb_passworda"
+                android:id="@+id/rememberPass"
                 android:layout_width="wrap_content"
                 android:layout_height="25dp" />
 
