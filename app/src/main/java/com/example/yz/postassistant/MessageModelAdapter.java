@@ -20,13 +20,13 @@ public class MessageModelAdapter extends RecyclerView.Adapter<MessageModelAdapte
     static  class ViewHolder extends RecyclerView.ViewHolder{
 
         TextView message_company;
-        TextView message_huojia;
+        //TextView message_huojia;
 
 
         public ViewHolder(View view){
             super(view);
             message_company = (TextView) view.findViewById(R.id.message_company);
-            message_huojia = (TextView) view.findViewById(R.id.message_huojia);
+            //message_huojia = (TextView) view.findViewById(R.id.message_huojia);
 
         }
     }
@@ -45,7 +45,7 @@ public class MessageModelAdapter extends RecyclerView.Adapter<MessageModelAdapte
 
         MessageModel messageModel = mMessageList.get(position);
         holder.message_company.setText(messageModel.getMessage_company());
-        holder.message_huojia.setText(messageModel.getMessage_huojia());
+       // holder.message_huojia.setText(messageModel.getMessage_huojia());
 
     }
     @Override

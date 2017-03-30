@@ -16,41 +16,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="     你好，你的"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/message_company"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/textView29"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="已到学子驿站"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/message_huojia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="货架三"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/textView31"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text=","
-            android:textSize="20sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -59,12 +24,12 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView32"
+            android:id="@+id/message_company"
             android:layout_width="wrap_content"
-            android:layout_height="44dp"
-            android:text="请速来领取。"
-            android:textSize="20sp"
-            android:layout_weight="0.83" />
+            android:layout_height="54dp"
+            android:layout_weight="0.83"
+            android:text="                "
+            android:textSize="20sp" />
 
         <CheckBox
             android:id="@+id/checkBox"

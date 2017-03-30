@@ -18,12 +18,12 @@
             android:textSize="24sp" />
 
         <ImageView
-            android:id="@+id/imageView7"
+            android:id="@+id/add_messagemodel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@android:drawable/ic_input_add"
             android:layout_alignBottom="@+id/textView21"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="19dp" />
+            android:layout_marginEnd="19dp"
+            app:srcCompat="@android:drawable/ic_input_add" />
     </RelativeLayout>
 </LinearLayout>

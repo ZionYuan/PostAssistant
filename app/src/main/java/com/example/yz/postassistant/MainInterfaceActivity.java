@@ -31,7 +31,7 @@ public class MainInterfaceActivity extends AppCompatActivity {
     private ImageButton edit_button;
     private ImageButton tracking_button;
     private LinearLayout addressList;
-    private PopupWindow popupWindow;
+    //private PopupWindow popupWindow;
     private ImageView head_view;
     private LinearLayout history;
 
@@ -47,7 +47,7 @@ public class MainInterfaceActivity extends AppCompatActivity {
         tracking_button = (ImageButton) findViewById(R.id.imageButton4);
         addressList = (LinearLayout)findViewById(R.id.address_list) ;
         head_view = (ImageView) findViewById(R.id.head);
-        head_view.setOnClickListener(popClick);
+        //head_view.setOnClickListener(popClick);
         history = (LinearLayout)findViewById(R.id.history);
         history.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -79,9 +79,15 @@ public class MainInterfaceActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        head_view.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Toast.makeText(getApplicationContext(),"touxiang",Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
-    View.OnClickListener popClick = new View.OnClickListener() {
+    /*View.OnClickListener popClick = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             getPopupWindow();
@@ -114,13 +120,13 @@ public class MainInterfaceActivity extends AppCompatActivity {
     /**
      * 获取PopipWinsow实例
      */
-    private  void  getPopupWindow(){
+   /* private  void  getPopupWindow(){
         if (null!=popupWindow){
             popupWindow.dismiss();
             return;
         }else {
             initPopupWindow();
-        }}
+        }}*/
 
 
     public void popupMenu(View v){
