@@ -38,14 +38,19 @@ public class MessageModelActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 Intent i = new Intent(MessageModelActivity.this,addMessageModelActivity.class);
-                startActivity(i);
+                startActivityForResult(i,1);
             }
         });
 
-        Intent intent = getIntent();
-        String messageModel = intent.getStringExtra("messageModel");
+
+
+    }protected void onActivityResult(int requestCode, int resultCode, Intent i) {
+    if(requestCode == 1){
+        String messageModel=i.getStringExtra("messageModel");
+
         messagesList.add(new MessageModel(messageModel));
     }
+}
     private void initOrder(){
         MessageModel a = new MessageModel("你的圆通大件已到学子驿站，请快领取。");
         messagesList.add(a);

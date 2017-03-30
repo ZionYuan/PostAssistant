@@ -24,9 +24,10 @@ public class addMessageModelActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 String mm = newMessageModel.getText().toString();
-                Intent intent = new Intent(addMessageModelActivity.this, MessageModelActivity.class);
+                Intent intent = new Intent();
                 intent.putExtra("messageModel",mm);
-                startActivity(intent);
+                setResult(1,intent);
+                finish();
             }
         });
     }
