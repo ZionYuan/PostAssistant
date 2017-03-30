@@ -26,7 +26,7 @@ public class MessageModelActivity extends AppCompatActivity {
         actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         actionBar.setCustomView(R.layout.actionbar_message_model);
 
-        initOrder();
+        //initOrder();// 需要添加短信模板至服务器
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view2);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
@@ -47,20 +47,20 @@ public class MessageModelActivity extends AppCompatActivity {
         messagesList.add(new MessageModel(messageModel));
     }
     private void initOrder(){
-            MessageModel a = new MessageModel("你的圆通大件已到学子驿站，请快领取。");
-            messagesList.add(a);
+        MessageModel a = new MessageModel("你的圆通大件已到学子驿站，请快领取。");
+        messagesList.add(a);
 
-            MessageModel  b= new MessageModel("你的圆通大件已到学子驿站，请快领取，过时不候。");
-            messagesList.add(b);
+        MessageModel  b= new MessageModel("你的圆通大件已到学子驿站，请快领取，过时不候。");
+        messagesList.add(b);
 
-            MessageModel  c= new MessageModel("速度领取你的快递，快快快。");
-            messagesList.add(c);
+        MessageModel  c= new MessageModel("速度领取你的快递，快快快。");
+        messagesList.add(c);
 
-            MessageModel  d= new MessageModel("不跟你多哔哔，快来拿快递。");
-            messagesList.add(d);
+        MessageModel  d= new MessageModel("不跟你多哔哔，快来拿快递。");
+        messagesList.add(d);
 
-            MessageModel  e= new MessageModel("速度点，快递来了。");
-            messagesList.add(e);
+        MessageModel  e= new MessageModel("速度点，快递来了。");
+        messagesList.add(e);
 
     }
 }
